@@ -1,0 +1,542 @@
+EESchema Schematic File Version 4
+LIBS:compactacion-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 60370511
+P 4250 2300
+F 0 "A1" H 4250 1211 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 4250 1120 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 4400 1350 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4250 1300 50  0001 C CNN
+	1    4250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 6037131E
+P 1250 2450
+F 0 "F1" H 1310 2496 50  0000 L CNN
+F 1 "Fuse" H 1310 2405 50  0000 L CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 1180 2450 50  0001 C CNN
+F 3 "~" H 1250 2450 50  0001 C CNN
+	1    1250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 60372688
+P 1000 3700
+F 0 "J1" H 1080 3692 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 1080 3601 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1000 3700 50  0001 C CNN
+F 3 "~" H 1000 3700 50  0001 C CNN
+	1    1000 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 3600 1350 3600
+Wire Wire Line
+	1200 3700 1300 3700
+Wire Wire Line
+	800  3900 1300 3900
+Wire Wire Line
+	1300 3900 1300 3700
+Wire Wire Line
+	1250 2300 1250 1550
+Wire Wire Line
+	1350 3350 1350 3600
+Text Label 1400 2050 0    50   ~ 0
+GND
+Wire Wire Line
+	1400 2050 1400 1800
+$Comp
+L pspice:0 #GND02
+U 1 1 6038169B
+P 1400 2050
+F 0 "#GND02" H 1400 1950 50  0001 C CNN
+F 1 "0" H 1400 2139 50  0000 C CNN
+F 2 "" H 1400 2050 50  0001 C CNN
+F 3 "~" H 1400 2050 50  0001 C CNN
+	1    1400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 60382338
+P 6400 1500
+F 0 "J9" H 6480 1492 50  0000 L CNN
+F 1 "Conn_01x04_CARGA" H 6480 1401 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 6400 1500 50  0001 C CNN
+F 3 "~" H 6400 1500 50  0001 C CNN
+	1    6400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 60383442
+P 6350 2550
+F 0 "J7" H 6430 2542 50  0000 L CNN
+F 1 "Conn_01x04_DISTAN" H 6430 2451 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 6350 2550 50  0001 C CNN
+F 3 "~" H 6350 2550 50  0001 C CNN
+	1    6350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J6
+U 1 1 603840D1
+P 6250 4200
+F 0 "J6" H 6300 4617 50  0000 C CNN
+F 1 "Conn_02x06_SDcard" H 6300 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6250 4200 50  0001 C CNN
+F 3 "~" H 6250 4200 50  0001 C CNN
+	1    6250 4200
+	1    0    0    -1  
+$EndComp
+Text Label 5600 4100 0    50   ~ 0
+MISO
+Text Label 5600 4200 0    50   ~ 0
+SCK
+Text Label 5600 4300 0    50   ~ 0
+MOSI
+Text Label 5600 4400 0    50   ~ 0
+CS
+Text Label 5600 4500 0    50   ~ 0
+5V
+Wire Wire Line
+	5600 4500 5900 4500
+Text Label 6050 3800 0    50   ~ 0
+GND
+Text Label 6050 1300 0    50   ~ 0
+GND
+Wire Wire Line
+	6200 1400 6050 1400
+Wire Wire Line
+	6050 1400 6050 1300
+Text Label 6050 2300 0    50   ~ 0
+GND
+Wire Wire Line
+	6150 2450 6050 2450
+Wire Wire Line
+	6050 2450 6050 2300
+Text Label 6000 1500 0    50   ~ 0
+DT
+Text Label 6000 1600 0    50   ~ 0
+SCKC
+Text Label 6000 1700 0    50   ~ 0
+5VA
+Wire Wire Line
+	6000 1500 6200 1500
+Wire Wire Line
+	6000 1600 6200 1600
+Wire Wire Line
+	6200 1700 6000 1700
+Text Label 3550 1900 0    50   ~ 0
+DT
+Text Label 3550 2000 0    50   ~ 0
+SCKC
+Wire Wire Line
+	3550 1900 3750 1900
+Wire Wire Line
+	3550 2000 3750 2000
+Text Label 6050 2750 0    50   ~ 0
+5VA
+Wire Wire Line
+	6050 2750 6150 2750
+Text Label 6000 2550 0    50   ~ 0
+D6
+Text Label 6000 2650 0    50   ~ 0
+D5
+Wire Wire Line
+	6000 2550 6150 2550
+Wire Wire Line
+	6000 2650 6150 2650
+Text Label 3550 2200 0    50   ~ 0
+D5
+Text Label 3550 2300 0    50   ~ 0
+D6
+Wire Wire Line
+	3550 2200 3750 2200
+Wire Wire Line
+	3750 2300 3550 2300
+Wire Wire Line
+	6050 4200 5600 4200
+Wire Wire Line
+	5600 4300 6050 4300
+Wire Wire Line
+	6050 4400 5600 4400
+Wire Wire Line
+	5600 4100 6050 4100
+Text Label 3300 2800 0    50   ~ 0
+MOSI
+Text Label 3300 2900 0    50   ~ 0
+MISO
+Wire Wire Line
+	3300 2800 3750 2800
+Wire Wire Line
+	3300 2900 3750 2900
+Text Label 3300 3000 0    50   ~ 0
+SCK
+Wire Wire Line
+	3300 3000 3750 3000
+Text Label 3300 2700 0    50   ~ 0
+CS
+Wire Wire Line
+	3300 2700 3750 2700
+Text Label 3350 2500 0    50   ~ 0
+D8
+Wire Wire Line
+	3350 2500 3750 2500
+Text Label 4950 2300 0    50   ~ 0
+A0
+Wire Wire Line
+	4750 2300 4950 2300
+Wire Wire Line
+	3100 1550 3100 950 
+Wire Wire Line
+	3100 950  4150 950 
+Wire Wire Line
+	4150 950  4150 1300
+$Comp
+L pspice:0 #GND04
+U 1 1 603C67D8
+P 3700 3500
+F 0 "#GND04" H 3700 3400 50  0001 C CNN
+F 1 "0" H 3700 3589 50  0000 C CNN
+F 2 "" H 3700 3500 50  0001 C CNN
+F 3 "~" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3500 3700 3300
+Wire Wire Line
+	3700 3300 4250 3300
+Connection ~ 4250 3300
+Wire Wire Line
+	4250 3300 4350 3300
+Text Label 4450 1000 0    50   ~ 0
+5VA
+Wire Wire Line
+	4450 1300 4450 1000
+Text Label 3100 1550 0    50   ~ 0
+5V
+$Comp
+L Switch:SW_Push SW1
+U 1 1 603CE6BA
+P 1100 2950
+F 0 "SW1" H 1100 3235 50  0000 C CNN
+F 1 "SW_Push" H 1100 3144 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Piano_10.8x4.1mm_W7.62mm_P2.54mm" H 1100 3150 50  0001 C CNN
+F 3 "~" H 1100 3150 50  0001 C CNN
+	1    1100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  3900 800  2950
+Wire Wire Line
+	800  2950 900  2950
+Wire Wire Line
+	1300 2950 1300 2600
+Wire Wire Line
+	1300 2600 1250 2600
+Wire Wire Line
+	1250 1550 3100 1550
+Wire Wire Line
+	6050 3750 6050 4000
+Wire Wire Line
+	5850 3750 6050 3750
+Text Label 1350 3350 0    50   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 607A3624
+P 6400 5150
+F 0 "J2" H 6480 5142 50  0000 L CNN
+F 1 "Conn_01x04_LCD" H 6480 5051 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 6400 5150 50  0001 C CNN
+F 3 "~" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+Text Label 6100 4900 0    50   ~ 0
+GND
+Wire Wire Line
+	6200 5050 6100 5050
+Wire Wire Line
+	6100 5050 6100 4900
+Wire Wire Line
+	5900 5150 5900 4500
+Wire Wire Line
+	5900 5150 6200 5150
+Connection ~ 5900 4500
+Wire Wire Line
+	5900 4500 6050 4500
+Text Label 5700 5250 0    50   ~ 0
+SDA
+Text Label 5750 5350 0    50   ~ 0
+SCL
+Wire Wire Line
+	5750 5350 6200 5350
+Wire Wire Line
+	5700 5250 6200 5250
+Text Label 4950 2700 0    50   ~ 0
+SDA
+Text Label 4950 2800 0    50   ~ 0
+SCL
+Wire Wire Line
+	4750 2700 4950 2700
+Wire Wire Line
+	4750 2800 4950 2800
+$Comp
+L Switch:SW_Push SW2
+U 1 1 607B2510
+P 2350 4200
+F 0 "SW2" H 2350 4485 50  0000 C CNN
+F 1 "SW_ON" H 2350 4394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2350 4400 50  0001 C CNN
+F 3 "~" H 2350 4400 50  0001 C CNN
+	1    2350 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 607B4F6F
+P 2950 4200
+F 0 "SW3" H 2950 4485 50  0000 C CNN
+F 1 "SW_DELET" H 2950 4394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2950 4400 50  0001 C CNN
+F 3 "~" H 2950 4400 50  0001 C CNN
+	1    2950 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 607B6311
+P 3550 4200
+F 0 "SW4" H 3550 4485 50  0000 C CNN
+F 1 "SW_REVIEW" H 3550 4394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 3550 4400 50  0001 C CNN
+F 3 "~" H 3550 4400 50  0001 C CNN
+	1    3550 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 607B79F2
+P 4000 4200
+F 0 "SW5" H 4000 4485 50  0000 C CNN
+F 1 "SW_START" H 4000 4394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 4000 4400 50  0001 C CNN
+F 3 "~" H 4000 4400 50  0001 C CNN
+	1    4000 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 607B8DFC
+P 2350 4750
+F 0 "R1" H 2420 4796 50  0000 L CNN
+F 1 "R" H 2420 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 2280 4750 50  0001 C CNN
+F 3 "~" H 2350 4750 50  0001 C CNN
+	1    2350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0101
+U 1 1 607BAB9D
+P 2350 5250
+F 0 "#GND0101" H 2350 5150 50  0001 C CNN
+F 1 "0" H 2350 5339 50  0000 C CNN
+F 2 "" H 2350 5250 50  0001 C CNN
+F 3 "~" H 2350 5250 50  0001 C CNN
+	1    2350 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5250 2350 4900
+Text Label 3600 4500 0    50   ~ 0
+A1
+Wire Wire Line
+	3600 4500 4000 4500
+Wire Wire Line
+	2350 4400 2350 4450
+$Comp
+L Device:R R2
+U 1 1 607BE14E
+P 2950 4750
+F 0 "R2" H 3020 4796 50  0000 L CNN
+F 1 "R" H 3020 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 2880 4750 50  0001 C CNN
+F 3 "~" H 2950 4750 50  0001 C CNN
+	1    2950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0102
+U 1 1 607BE154
+P 2950 5250
+F 0 "#GND0102" H 2950 5150 50  0001 C CNN
+F 1 "0" H 2950 5339 50  0000 C CNN
+F 2 "" H 2950 5250 50  0001 C CNN
+F 3 "~" H 2950 5250 50  0001 C CNN
+	1    2950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5250 2950 4900
+Text Label 3150 4550 0    50   ~ 0
+D7
+Wire Wire Line
+	3150 4550 3550 4550
+$Comp
+L Device:R R3
+U 1 1 607BFAEB
+P 3550 4750
+F 0 "R3" H 3620 4796 50  0000 L CNN
+F 1 "R" H 3620 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3480 4750 50  0001 C CNN
+F 3 "~" H 3550 4750 50  0001 C CNN
+	1    3550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0103
+U 1 1 607BFAF1
+P 3550 5250
+F 0 "#GND0103" H 3550 5150 50  0001 C CNN
+F 1 "0" H 3550 5339 50  0000 C CNN
+F 2 "" H 3550 5250 50  0001 C CNN
+F 3 "~" H 3550 5250 50  0001 C CNN
+	1    3550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5250 3550 4900
+Text Label 2550 4500 0    50   ~ 0
+D8
+Wire Wire Line
+	2550 4500 2950 4500
+$Comp
+L Device:R R4
+U 1 1 607C1377
+P 4000 4750
+F 0 "R4" H 4070 4796 50  0000 L CNN
+F 1 "R" H 4070 4705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3930 4750 50  0001 C CNN
+F 3 "~" H 4000 4750 50  0001 C CNN
+	1    4000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0104
+U 1 1 607C137D
+P 4000 5250
+F 0 "#GND0104" H 4000 5150 50  0001 C CNN
+F 1 "0" H 4000 5339 50  0000 C CNN
+F 2 "" H 4000 5250 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5250 4000 4900
+Text Label 1950 4450 0    50   ~ 0
+D9
+Wire Wire Line
+	1950 4450 2350 4450
+Connection ~ 3550 4000
+Wire Wire Line
+	3550 4000 4000 4000
+Wire Wire Line
+	2350 4000 2950 4000
+Connection ~ 2950 4000
+Wire Wire Line
+	2950 4000 3550 4000
+Text Label 4150 4000 0    50   ~ 0
+5VA
+Wire Wire Line
+	4150 4000 4000 4000
+Connection ~ 4000 4000
+Text Label 1250 2200 0    50   ~ 0
+A0
+Wire Wire Line
+	1350 3900 1300 3900
+Connection ~ 1300 3900
+Text Label 3350 2400 0    50   ~ 0
+D7
+Wire Wire Line
+	3350 2400 3750 2400
+Text Label 3350 2600 0    50   ~ 0
+D9
+Wire Wire Line
+	3350 2600 3750 2600
+Text Label 4900 2400 0    50   ~ 0
+A1
+Wire Wire Line
+	4750 2400 4900 2400
+$Comp
+L Device:Buzzer BZ1
+U 1 1 607966FC
+P 2500 2700
+F 0 "BZ1" H 2652 2729 50  0000 L CNN
+F 1 "Buzzer" H 2652 2638 50  0000 L CNN
+F 2 "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm" V 2475 2800 50  0001 C CNN
+F 3 "~" V 2475 2800 50  0001 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2600 2400 2100
+Wire Wire Line
+	2400 2100 3750 2100
+Wire Wire Line
+	2400 2800 2400 3300
+Wire Wire Line
+	2400 3300 3700 3300
+Connection ~ 3700 3300
+Wire Wire Line
+	2950 4400 2950 4500
+Connection ~ 2950 4500
+Wire Wire Line
+	2950 4500 2950 4600
+Wire Wire Line
+	3550 4400 3550 4550
+Connection ~ 3550 4550
+Wire Wire Line
+	3550 4550 3550 4600
+Connection ~ 2350 4450
+Wire Wire Line
+	4000 4400 4000 4500
+Connection ~ 4000 4500
+Wire Wire Line
+	4000 4500 4000 4600
+Wire Wire Line
+	2350 4450 2350 4600
+$Comp
+L Display_Character:LCD-016N002L U1
+U 1 1 607DE49C
+P 9650 1900
+F 0 "U1" H 9650 2881 50  0000 C CNN
+F 1 "LCD-016N002L" H 9650 2790 50  0000 C CNN
+F 2 "Display:LCD-016N002L" H 9670 980 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/37299/37299.pdf" H 10150 1600 50  0001 C CNN
+	1    9650 1900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
